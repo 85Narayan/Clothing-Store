@@ -3,6 +3,8 @@ import "./Hero.css";
 import hero_image from "../Assets/hero_image.png";
 import hand_icon from "../Assets/hand_icon.png";
 import arrow_icon from "../Assets/arrow.png";
+import { Link } from 'react-router-dom'
+
 
 const Hero = () => {
   return (
@@ -18,7 +20,7 @@ const Hero = () => {
           <p>for everyone</p>
         </div>
         <div className="hero-latest-btn">
-          <div>Latest Collection</div>
+        <Link to='/mens' style={{ textDecoration: 'none' }}>Latest Collection</Link>
           <img src={arrow_icon} alt="" />
         </div>
       </div>
